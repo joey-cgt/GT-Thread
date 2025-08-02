@@ -107,16 +107,20 @@ bool GLooper::IsStopped()
     return m_bStopped;
 }
 
-UINT64 GLooper::GetThreadId() const
+UINT64 GLooper::GetThreadId()
 {
     return m_nThreadId;
 }
 
-std::string GLooper::GetThreadName() const
+std::string GLooper::GetThreadName()
 {
     return m_strName;
 }
 
+gt::base::wp<boost::asio::io_context> GLooper::GetIoContext()
+{
+    return m_pIoContext;
+}
 
 } // namespace event
 } // namespace gt

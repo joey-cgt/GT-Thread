@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(gt_thread)
+project(gtthread)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -16,6 +16,7 @@ include_directories(
     ./task/work
     ./thread
     ./utils
+    ./timer
 )
 
 # 递归收集所有 .cpp 文件

@@ -24,8 +24,9 @@ public:
     void Loop();
     void Stop();
     bool IsStopped();
-    UINT64 GetThreadId() const;
-    std::string GetThreadName() const;
+    UINT64 GetThreadId();
+    std::string GetThreadName();
+    gt::base::wp<boost::asio::io_context> GetIoContext();
 
 private:
     std::atomic<UINT64> m_nThreadId;
