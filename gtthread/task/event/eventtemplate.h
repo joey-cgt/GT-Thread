@@ -22,6 +22,8 @@ public:
 
     virtual ~GEventBase() = default;
 
+    UINT16 GetEventId() const { return EVENT_ID(m_classId, m_functionId); }
+
     UINT8 GetClassId() const { return m_classId; }
 
     UINT8 GetFunctionId() const { return m_functionId; }
@@ -49,7 +51,7 @@ public:
     virtual ~GBaseEvent1Param() = default;
 
     // 获取参数
-    T getParam() const { return m_param; }
+    T GetParam() const { return m_param; }
 protected:
     T m_param;  // 事件参数
 };
@@ -64,8 +66,8 @@ public:
     virtual ~GBaseEvent2Param() = default;
 
     // 获取参数
-    T1 getParam1() const { return m_param1; }
-    T2 getParam2() const { return m_param2; }
+    T1 GetParam1() const { return m_param1; }
+    T2 GetParam2() const { return m_param2; }
 
 protected:
     T1 m_param1;  // 第一个事件参数
@@ -82,9 +84,9 @@ public:
     virtual ~GBaseEvent3Param() = default;
 
     // 获取参数
-    T1 getParam1() const { return m_param1; }
-    T2 getParam2() const { return m_param2; }
-    T3 getParam3() const { return m_param3; }
+    T1 GetParam1() const { return m_param1; }
+    T2 GetParam2() const { return m_param2; }
+    T3 GetParam3() const { return m_param3; }
 
 protected:
     T1 m_param1;  // 第一个事件参数

@@ -31,7 +31,7 @@ UINT32 Location::GetLine() const
     return m_line;
 }
 
-std::string Location::GetLocation() const
+std::string Location::GetInfo() const
 {
     return m_file + ":" + std::to_string(m_line);
 }

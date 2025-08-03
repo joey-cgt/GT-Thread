@@ -17,7 +17,7 @@ public:
     virtual ~Location();
     std::string GetFile() const;
     UINT32 GetLine() const;
-    std::string GetLocation() const;
+    std::string GetInfo() const;
 
 private:
     std::string m_file;

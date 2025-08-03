@@ -28,5 +28,5 @@ echo "正在编译项目..."
 cmake --build . --config Release || { echo "错误：项目编译失败"; exit 1; }
 
 echo "构建成功！"
-echo "静态库路径：${LIB_DIR}"
-echo "可执行文件路径（如有）：${BIN_DIR}"
+echo "动/静态库路径：${LIB_DIR}"
+echo "可执行文件路径：${BIN_DIR}"
