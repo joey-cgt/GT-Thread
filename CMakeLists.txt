@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
+message(STATUS "CMAKE_CXX_COMPILER: ${CMAKE_CXX_COMPILER}")
+message(STATUS "CMAKE_CXX_COMPILER_VERSION: ${CMAKE_CXX_COMPILER_VERSION}")
+
 include_directories(
     .
     ./gtthread
